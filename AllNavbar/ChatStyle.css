@@ -1,0 +1,224 @@
+.MainChatContainer {
+    margin-top: 20px;
+    width: 326px;
+    height: 450px;
+    position: fixed;
+    right: 25rem;
+    bottom: -14px;
+    border-radius: 49px;
+}
+.ChatHeader {
+border-radius:3px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    gap: 140px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.ChatLeftNav {
+    display: flex;
+    align-items: center;
+}
+
+
+.profille-circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 3px solid #ffff;
+}
+
+.profile_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ChatUserName{
+    display: inline;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+.ChatRightNav {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+}
+.closeIcon{
+    cursor: pointer;
+}
+.ChatBody{
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 50px;
+    overflow-y: auto;
+    
+    
+}
+.ChatBody::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+}
+
+.ChatBody::-webkit-scrollbar-thumb {
+    background: #a098a5;
+    border-radius: 6px;
+}
+.message{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.message p{
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 9px;
+    color: white;
+background: #1877f2;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+.message p::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: -12px;
+   width: 20px;
+   height: 20px;
+   background:linear-gradient(135deg ,#1877f2 50%,transparent 50%, transparent);
+}
+.my-message{
+    justify-content: flex-end;
+}
+.frnd-message{
+    justify-content: flex-start;
+}
+
+.frnd-message p{
+    background: #dbd6d6;
+    color: black;
+    text-align: left;
+}
+.frnd-message.message p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg,#dbd6d6 50%, transparent 50%, transparent);
+}
+
+.chat-input{
+    display: flex;
+    width: 100%;
+    height: 60px;
+        background: rgb(217 217 217);
+    padding: 15px;
+}
+.chat-input input{
+    position: relative;
+        width: 90%;
+        height: 35px;
+        margin: 0 20px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        font-size: 1em;
+}
+
+
+.ChatBody textarea {
+    width: 270px;
+    border: 0;
+    outline: 0;
+    height: 40px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    overflow: hidden;
+    margin-top: 268px;
+    position: fixed;
+
+}
+.chatBody-Profile{
+    width: 30px;
+        height: 30px;
+        border-radius: 40px;
+        overflow: hidden;
+        border: 3px solid #ffff;
+}
+
+.circlee{
+width: 30px;
+height: 30px;
+
+}
+
+.imagee{
+   margin-left: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:  50%;
+}
+.friend-imagee{
+    margin-left: -30px;
+    width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+}
+/* .pro-image{
+width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.message-content{
+    display: flex;
+   
+    align-items: center;
+    margin-top: 20px;
+}
+.message{
+    background-color: #e9ebee;
+    border-radius: 6px;
+  
+    margin-top: 18PX;
+    width: 200px;
+}
+ */
+
+.send-btn{
+        margin-top: 3px;
+    color: #fff;
+        cursor: pointer;
+        border-radius: 26px;
+        font-size: 15px;
+        height: 0px;
+        padding: 0px -7px;
+        border: wheat;
+        
+}
+
+.ChatBody::-webkit-scrollbar-thumb {
+    background: #a098a5;
+    border-radius: 6px;
+}
+
+
+.ChatBodys::-webkit-scrollbar-thumb {
+    background: #621e8f;
+    border-radius: 6px;
+}
