@@ -1,0 +1,263 @@
+.modal-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-comment-btn{
+    background-color: #f2faf6;
+    --bs-btn-active-bg: #f2faf6;
+    --bs-btn-hover-bg: #f2faf6;
+    --bs-btn-hover-color: black;
+        color: black;
+        cursor: pointer;
+        border-radius: 13px;
+        font-size: 15px;
+        padding: 5px 15px;
+        border: wheat;
+        margin: 10px 40px;
+}
+
+
+.CommentContainer {
+    width: 326px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.ChatHeader {
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    gap: 140px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.ChatLeftNav {
+    display: flex;
+    align-items: center;
+}
+
+
+.profille-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 3px solid #ffff;
+}
+
+.profile_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ChatUserName {
+    display: inline;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+/* .ChatRightNav {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+}
+
+.closeIcon {
+    cursor: pointer;
+} */
+
+.Comment-Body {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 50px;
+    overflow-y: auto;
+}
+
+.Comment-Body::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+}
+
+.Comment-Body::-webkit-scrollbar-thumb {
+    background: #a098a5;
+    border-radius: 6px;
+}
+
+.comment {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.comment p {
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 100%;
+    padding: 9px;
+    color: white;
+    background: #1877f2;
+    border-radius: 10px;
+    font-size: 0.9em;
+}
+
+/* .message p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #1877f2 50%, transparent 50%, transparent);
+} */
+
+.my-message {
+    justify-content: flex-end;
+}
+
+.user-comment {
+    justify-content: flex-start;
+}
+
+.user-comment p {
+    background: #dbd6d6;
+    color: black;
+    text-align: left;
+}
+
+/* .frnd-message.message p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg, #dbd6d6 50%, transparent 50%, transparent);
+} */
+
+.comment-input {
+    display: flex;
+    width: 100%;
+    height: 60px;
+
+    padding: 15px;
+}
+
+.comment-input input {
+    position: relative;
+    width: 90%;
+    height: 35px;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
+    background: #e7dfdc;
+}
+
+
+
+.chatBody-Profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 3px solid #ffff;
+}
+
+/* .circlee {
+    width: 30px;
+    height: 30px;
+
+} */
+.comment-user-imagee-circlee {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment-user-imagee {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .imagee {
+    margin-left: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+} */
+
+/* .friend-imagee {
+    margin-left: -9px;
+        margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+} */
+
+/* .pro-image{
+width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.message-content{
+    display: flex;
+   
+    align-items: center;
+    margin-top: 20px;
+}
+.message{
+    background-color: #e9ebee;
+    border-radius: 6px;
+  
+    margin-top: 18PX;
+    width: 200px;
+}
+ */
+
+.post-comment-btn {
+    margin-top: 3px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 26px;
+    font-size: 15px;
+    height: 0px;
+    padding: 0px -7px;
+    border: wheat;
+
+}
+
+.new-line-span {
+    display: block;
+    font-weight: bold;
+}
+
+.moveImage {
+    margin-right: 10px;
+    margin-left: -40px;
+}
+
+.message p {
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: -2px;
+}
