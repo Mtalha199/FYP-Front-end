@@ -1,0 +1,1015 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+
+.DashboardLayout-container{
+  background: #efefef;
+}
+
+
+/* ------------------------Nav Bar Styling----------------------------------------- */
+nav{
+  display:flex ;
+  align-items: center;
+  background: #fff;
+  padding: 5px 5% ;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  justify-content: space-between;
+}
+
+.navbar-logo{
+ font-size: 30px;
+ color: #A020F0;
+ font-weight: bold;
+ text-align: center;
+}
+.nav-left{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+.nav-left ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-left ul li .left-Nav-img {
+  width: 25px;
+      margin: 0 48px;
+      margin-bottom: -18px;
+}
+.nav-left ul li .active {
+  border-bottom: 3px solid #A020F0;
+  border-radius: 0;
+  height: 30px;
+  transform:translate(0);
+}
+.nav-right{
+  display: flex;
+  align-items: center;
+}
+.nav-right ul li{
+  list-style: none;
+  display: inline-block;
+}
+.HeaderCircle-container {
+  position: relative;
+}
+
+.TopNavCircle-container::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #41db51;
+  position: absolute;
+  right: 80px;
+ 
+}
+.TopNavCircle-container{
+  width: 40px;
+  height: 40px;
+}
+
+.topNavpreview-Image{
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  cursor:pointer;
+
+}
+.timelineCircleContainer{
+  width: 40px;
+  height: 40px;
+}
+.timeline-preview-Image{
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  cursor:pointer;
+}
+.nav-right ul li img {
+  width: 25px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+
+.nav-user-icon img{
+  cursor: pointer;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+ height:100%;
+}
+
+.nav-user-icon  {
+  margin-left: 30px;
+}
+.search-box{
+  background: #efefef;
+  width: 300px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: -15px;
+}
+.search-box img {
+  width: 18px;
+}
+#home{
+  margin-top: -15px;
+}
+.search-box input {
+ width: 100%;
+ background: transparent;
+ padding: 10px;
+ outline: none;
+ border: 0;
+ height: 35px;
+}
+
+/* ----------------------------Responsive Navbar---------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  .search-box {
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left-sidebar  {
+      display: none;
+      overflow: hidden;
+      
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .right-sidebar {
+      display: none;
+
+  }
+} 
+
+@media screen and (max-width: 800px) {
+  .nav-right {
+     margin-right: 200px;
+
+  }
+}
+
+
+
+/* ------------------------------------------------------------------------------------- */
+
+/*-----------------------------Container Styling is started here------------------------- */
+.DashboardLayout-container
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 5%;
+}
+/* ----------------------------Left Sidebar Styling-------------------------------------- */
+.Dashboardleft-sidebar{
+  flex-basis: 20%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  margin-left: -55px;
+  background: #ffffffc2;
+  padding: 20px;
+  border-radius: 6px;
+  color: #626262;    
+  height: auto;
+  overflow: hidden;
+}
+
+.LeftNavBar-imp-links a{
+  text-decoration:none ;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  color: #000000;
+  width: fit-content;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.LeftNavBar-imp-links a img {
+width: 25px;
+margin-right: 15px;
+}
+
+/* ----------------------------Right Sidebar Styling-------------------------------------- */
+.right-sidebar {
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  background: #ffffffc2;
+  padding: 20px;
+  border-radius: 4px;
+  color: #626262;
+  margin-right: -60px;
+  height: 80vh;
+  overflow: auto;
+}
+
+
+
+
+.right-sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.right-sidebar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 6px;
+}
+
+/* ----------------------------Middle Section----------------------- */
+.DashboardMain-content{
+  flex-basis: 57%;
+  margin-left: 25px;
+  margin-right: 19px;
+
+}
+.write-post-container{
+  width: 600px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+  margin-left: -50px;
+
+}
+.user-profile{
+  display: flex;
+  align-items: center;
+}
+.user-profile img{
+  width: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-profile p{
+  margin-bottom: -5px;
+  font-weight: 500;
+  color: #626262;
+}
+
+.user-profile small{
+  font-size: 12px;
+}
+
+.post-input-container{
+  padding-left: 55px;
+  margin-top: -40px;
+}
+/* .post-input-container textarea{
+  width: 100%;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #ccc;
+  background:transparent;
+  resize: none;
+  
+} */
+.post-input-container textarea {
+ 
+  width: 100%;
+      border: 0;
+          outline: 0;
+          height: 40px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border-radius:30px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+      overflow: hidden;
+     margin-top: 10px;
+  
+  }
+.add-post-links{
+  display: flex;
+  margin-top: 10px;
+}
+.add-post-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #626262;
+  margin-right: 30px;
+  font-size: 13px;
+}
+.add-post-links img {
+  width: 20px;
+  margin-right: 10px;
+}
+/* -------------------------------Posts Styling----------------------------- */
+
+.postcard {
+  margin-top: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+     align-items: center;
+     justify-content: center;
+     margin-left: 170px;
+}
+.profile-postcard {
+  margin-top: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 700px;
+  height: 700px;
+     align-items: center;
+     justify-content: center;
+     margin-left: 80px;
+}
+
+.postcard-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.postcard-info {
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 14px;
+  margin: 0;
+}
+
+.date {
+  font-size: 12px;
+  color: #888888;
+  margin: 0;
+}
+
+.postcard-content {
+  margin-top: 20px;
+}
+
+.message {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.photo {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.profileTimelinephoto{
+  width: 100%;
+  height: 500px;
+  
+  object-fit: cover;
+}
+
+.postcard-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #888888;
+}
+
+.likes,
+.comments {
+  display: flex;
+  align-items: center;
+}
+
+.like-icon,
+.comment-icon {
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+      overflow: auto;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #621e8f;
+  border-radius: 6px;
+}
+
+/* -----------------------------------------New Post-------------------------- */
+
+
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #747070;
+  border-radius: 6px;
+}
+
+/* ------------------------------------Footer------------------------------ */
+.Dashboard-footer{
+  text-align: center;
+  color: #9a9a9a;
+  padding: 10px 0 20px;
+  font-size: 13px;
+  background: #efefef;
+  }
+
+
+/* ---------------------------------Drop Down Menu----------------------------*/
+.subMenuParent {
+  top: 29px;
+  right: 12px;
+  width: 260px;
+  max-height: 250px;
+  position: absolute;
+  transition: max-height 0.5s;
+  justify-content: flex-end;
+  display: flex;
+  float: right;
+  z-index: 99999999; }
+
+.subMenuParent.open-menu {
+  max-height: 400px;
+}
+
+.subMenu {
+  background:#efefef;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 7px;
+}
+/* -----------------------Notification Menu-------------------------------- */
+.notification-menu{
+  position: absolute;
+  margin-right: 230px;
+  top: 100%;
+  right: 0.5%;
+  width: 260px;
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.5s;
+}
+
+.notification-menu.open-menu {
+  max-height: 400px;
+}
+
+.subMenu {
+  background: #efefef;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 7px;
+}
+/* ---------------------------------------------------------------------------- */
+
+/* -----------------------Chat Menu-------------------------------- */
+.chat-menu {
+  position: absolute;
+  margin-right:   170px;
+  top: 100%;
+  right: 0.5%;
+  width: 260px;
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.5s;
+  overflow: auto;
+}
+.online-list span{
+  font-size: x-small;
+  margin-left: -80px;
+  margin-top: 10px;
+}
+.chat-menu::-webkit-scrollbar{
+  width: 3px;
+}
+.chat-menu::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 6px;
+}
+
+.chat-menu.open-menu {
+  max-height: 400px;
+}
+
+.subMenu {
+  background: #efefef;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+/* ---------------------------------------------------------------------------- */
+.userProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userProfile h3 {
+  font-weight: 300;
+}
+
+.userProfile img {
+  width: 38px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.userProfile hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 15px 0 10px;
+
+}
+
+.subMenu-link {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.subMenu-link img {
+  width: 30px;
+  border-radius: 50%;
+  padding: 4px;
+  margin-right: 15px;
+  background: #eceaff;
+}
+
+.subMenu-link p {
+  width: 100%;
+}
+
+.subMenu-link span {
+  font-size: 10px;
+  transform: 0.5s;
+}
+
+.subMenu-link:hover span {
+  transform: translateX(5px);
+}
+
+.subMenu-link:hover p {
+  font-weight: 600;
+}
+
+
+/* -------------------------------------Right SideBar------------------------------ */
+.sidebar-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+
+}
+.sidebar-title h4{
+font-weight: 600;
+font-size: 16px;
+}
+.sidebar-title a{
+  text-decoration: none;
+  color: #1876f2;
+}
+.online-list{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.online-list .online img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit:cover;
+
+}
+.online-list .online {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.online-list .online::after {
+ top: unset;
+ bottom: 5px;
+
+}
+
+.right-sidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+.right-sidebar::-webkit-scrollbar-thumb {
+
+  
+      background: #a098a5;
+      border-radius: 6px;
+      }
+/* ----------------------------------- */
+/* .main {
+  background-color: #0000002d;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: borderBox;
+  border: 1px solid grey;
+  display: grid;
+  grid-template-rows: 60px 500px;
+  grid-template-columns: 300px 2fr 1fr;
+  grid-gap: 25px;
+  overflow-y: scroll;
+}
+.navbar {
+  background-color: #ffffff;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.firstColumNavbar {
+  color: #6f42c1;
+  grid-column: 1/2;
+  margin-left: 80px;
+}
+.secColumnNavbar {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: spaceAround;
+  align-items: center;
+  gap: 50px;
+}
+.thirdColumnNavbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 15px;
+}
+.mainLeftSide {
+  background-color: #ffffff;
+  grid-row: 2/2;
+  border-radius: 10px;
+  align-items: center;
+}
+.mainCenter {
+  background-color: #ffffff;
+  grid-column: 3/2;
+  grid-row: 2/2;
+  border-radius: 10px;
+}
+.mainRightSide {
+  background-color: #ffffff;
+  grid-column: 3/3;
+  grid-row: 2/2;
+  border-radius: 10px;
+}
+.fR {
+  border: 1px solid grey;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+.accBtn {
+  border-radius: 10px;
+  background-color: #6f42c1;
+  margin-left: 85px;
+}
+.decBtn {
+  border-radius: 10px;
+  background-color: red;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+} */
+
+
+
+
+
+
+@media screen and (max-width: 1400px) and (min-width: 700px) {
+  .main-content{
+    width: 63%;
+  }
+}
+
+
+/* ------------------------------------------------------------------------PROFILE CSS/ProfileUploadStyle------------------ */
+
+.profile_uploader-btn {
+  --profile-size: 90px;
+  border-radius: var(--profile-size);
+  position: relative;
+  /* border: 2px solid #c36666; */
+  transform: translate(8px, 60px);
+
+}
+
+.MoveAbleDiv{
+  margin-left: 30px;
+  margin-bottom: 40px
+}
+.ProfilePictureDiv{
+  width: 90px;
+  height:90px;
+}
+.profilePhoto-Preview{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.profile_image-prev {
+  width: var(--profile-size);
+  height: var(--profile-size);
+  border-radius: var(--profile-size);
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+.profile_image {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.camera_icon {
+  position: absolute;
+  bottom: 102px;
+  right: 118px;
+  /* --camera-size: 20px;
+  width: var(--camera-size);
+  height: var(--camera-size); */
+  border-radius: 50px;
+  background-color: #ffff;
+  display: grid;
+  place-items: center;
+}
+
+.camera_icon {
+ 
+  height: 15px;
+  color: #434343;
+}
+
+
+.profile_input-btn {
+
+  opacity: 100;
+
+}
+
+
+
+
+/* --------------------------------------------------PROFILECARDCSS----------------------------- */
+
+.mainBox {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 6px;
+  width: 820px;
+  height:250px;
+  margin: 10px;
+  box-shadow: 0px 1px 10px 1px rgb(66, 63, 63);
+}
+
+.upperBox {
+ 
+  height: 185px;
+  border-radius: 4px;
+}
+
+.lowerBox {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  align-items: center;
+  align-content: space-between;
+
+  height: 70px;
+
+}
+.ProfileImageDiv{
+
+  transform: translate(40px, -40px);
+}
+
+.pages-titlee{
+  transform: translate(9px, 1px);
+}
+.profileBtn{
+  background-color: #24E28A;
+    color: white;
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: wheat;
+    margin: 30px 40px;
+    transform: translate(600px,-73px);
+}
+
+/* ------------------------------------------------CoverPhottoCSS------------------------ */
+.Cover_uploader-btn {
+  width:820px;
+  height: 185px;
+  border-radius: 6px;
+  height: 180px;
+  position: relative;
+ 
+
+}
+
+.cover_Photo-prev-DashToPro{
+  width:820px;
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 0px;
+  border: 1px solid #fff;
+}
+.cover_image-prev {
+  width:820px;
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: -24px;
+  border: 1px solid #fff;
+}
+
+.cover_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camerra_icon {
+  position: absolute;
+  bottom: 50px;
+  right: 18px;
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+
+}
+
+.Cover_input-btn {
+  opacity: 100;
+}
+
+.coverBtn{
+  background-color: #24E28A;
+  color: white;
+  cursor: pointer;
+  border-radius: 13px;
+  font-size: 15px;
+  padding: 5px 15px;
+  border: wheat;
+  margin: 30px 40px;
+  position: absolute;
+  bottom: -15px;
+  right: -35px;
+}
+/* -------------------------------------------------------------------------------------Friendss---------------------- */
+
+.AddFriendCard{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 6px;
+  width: 230px;
+  height: 140px;
+  margin: 10px;
+  display: inline-block;
+}
+.cardPic{
+  width: 45px;
+  border-radius: 50%;
+  margin: 20px 96px;
+}
+.profile-titleDiv{
+    
+  align-items: center;
+  margin:-10px 40px;
+  transform: translate(-98px, -10px)
+  
+  
+}
+.btnAdd{
+  background-color: #24E28A;
+  color: white;
+  cursor: pointer;
+  border-radius: 13px;
+  font-size: 15px;
+  padding: 1px 15px;
+  border: wheat;
+  margin: 1px 40px;
+  transform: translate(-10px, -19px);
+}
+  
+.cancelBtn{
+  background-color: #e22424;
+  color: white;
+  cursor: pointer;
+  border-radius: 13px;
+  font-size: 15px;
+  padding: 1px 10px;
+  border: wheat;
+  margin: 1px 40px;
+  transform: translate(94px, -46px);
+}
+.del-btan{
+  background-color: #e22424;
+  color: white;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 11px;
+  padding: 0px 7px;
+  transform: translate(614px, -34px);
+}
+/* ---------------------------------IMAGE STYLING--------------------------- */
+
+.profile-title{
+  transform: translate(59px ,-30px);
+}
+.post-btn{
+  background-color: #24E28A;
+    color: white;
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: wheat;
+    transform: translate(145px , 0px);
+}
+.post-img{
+  width: 300px;
+  height: 300px;
+  align-items: center;
+}
+
+
+
+
+.notification-span{
+  font-weight: bold;
+}
+
+
+
+
+.chatbar{
+  min-height: 40vh;
+      min-width: 351px;
+      background-color: white;
+      border: 1px solid;
+      border-radius: 10px 10px 0px 0px;
+      bottom: 1px;
+      right: 23rem;
+}
