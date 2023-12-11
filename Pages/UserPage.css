@@ -1,0 +1,92 @@
+/* .modal-div{
+  
+} */
+.pages.likecard-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 550px;
+    overflow: auto;
+}
+.pages  .likeCardBox {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 360px;
+    height: 150px;
+    margin: 10px;
+    box-shadow: 0px 1px 10px 1px rgb(66, 63, 63);
+    position: relative;
+}
+
+.pages  .UpperBox {
+    height: 85px;
+    width: 358px;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 2px;
+
+
+}
+
+
+.pages  .lowerBox {
+    margin-top: 2px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        align-items: center;
+    gap: 30px;
+
+}
+.pages  .circle-container {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 15px;
+    bottom: 30px;
+}
+
+.pages .cover-box{
+    width: 357px;
+    height: 85px;
+    border: 2px solid #fff;
+    
+}
+.pages  .circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.pages  .like-btn {
+    
+    background-color: #14995b;
+    color: white;
+    cursor: pointer;
+    border-radius: 13px;
+    font-size: 15px;
+    padding: 0px 9px;
+    border: wheat;
+    margin-right: 20px;
+}
+
+
+.pages  .cover-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pages  .PageName{
+    padding-left: 5rem;
+   
+}
+
