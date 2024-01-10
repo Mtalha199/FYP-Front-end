@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Images/Carlito-Bold.ttf);
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #e7eef5;
+    min-width: 100vw;
+
+}
+
+.child1 {
+ 
+    background-image: url(../Images/login-bg.jpg);
+    display: flex;
+    height: 100vh;
+    background-position: center;
+    background-size: 100%;
+    color: #A020F0;
+    width: 50%;
+    background-repeat: no-repeat;
+    flex-flow: column;
+
+
+}
+.headinglogo{
+    text-decoration: none;
+    color: #A020F0;
+}
+.headinglogo:hover{
+color: none;
+}
+.SignUpchild1 {
+    display: flex;
+    height: 100vh;
+    background-image: url(../Images/login.jpg);
+    background-position: center;
+    background-size: 100%;
+    color: #A020F0;
+    width: 100vw;
+    background-repeat: no-repeat;
+    flex-flow: column;
+}
+
+.heading {
+    display: flex;
+    gap: 54%;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: myFirstFont;
+}
+
+.child2 {
+    display: flex;
+    height: 100vh;
+    width: 50%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    .child1 {
+        display: none;
+    }
+
+    .heading {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .child2 {
+        flex: 50%;
+    }
+}
+
+
+
+.HeadingTitle {
+    text-decoration: none;
+    color: #A020F0;
+    font-family: myFirstFont;
+    font-size: 35px;
+}
+
+.inputBox {
+    position: relative;
+    width: 370px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #A020F0;
+    background: white;
+    border-radius:8px;
+    outline: none;
+    font-size: 1em;
+
+}
+
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    pointer-events: none;
+    font-size: 1em;
+    font-family: myFirstFont;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 0.349);
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.80em;
+    padding: 0 10px;
+    background: #A020F0;
+    border-radius: 3px;
+}
+
+a {
+    color: #A020F0;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: myFirstFont;
+    margin-top: -10px;
+}
+
+a:hover {
+    color:  #A020F0;
+    
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+.forgetPassword {
+    font-weight: 200;
+    font-size: small;
+}
+
+.Loginbtn {
+    background-color: #A020F0;
+    width: 370px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: myFirstFont;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
